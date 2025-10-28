@@ -1,3 +1,4 @@
+#Importo "By" de Selenium
 from selenium.webdriver.common.by import By
 
 # Declaro las constantes
