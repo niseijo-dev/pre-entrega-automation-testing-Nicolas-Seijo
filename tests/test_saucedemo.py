@@ -44,7 +44,7 @@ def test_catalogo(driver):
     assert len(products) > 0, "No se encontraron productos en la página"
 
     # Obtengo el nombre y precio del primer producto
-    nombrePrimerProd = driver.find_element(By.XPATH, "(//div[@class='inventory_item_name'])[1]").text
+    nombrePrimerProd = driver.find_element(By.CSS_SELECTOR, "#item_4_title_link > div").text
     precioPrimerProd = driver.find_element(By.XPATH, "(//div[@class='inventory_item_price'])[1]").text
 
     # Imprime el nombre y precio del primer producto
@@ -57,7 +57,7 @@ def test_carrito(driver):
     login(driver)
 
     # Obtengo el nombre del primer producto
-    nombreProducto = driver.find_element(By.XPATH, "(//div[@class='inventory_item_name'])[1]").text
+    nombreProducto = driver.find_element(By.CSS_SELECTOR, "#item_4_title_link > div").text
     # Localizo el primer boton 'Add to cart' y le doy click
     botonAgregar = driver.find_element(By.XPATH, "(//button[text()='Add to cart'])[1]")
     botonAgregar.click()

@@ -21,7 +21,8 @@ Este proyecto automatiza los flujos básicos (login, catálogo y carrito) del si
 \## Instalación de dependencias:
 
 1. Clonar el repositorio
-2. Usar el comando "pip install -r requirements.txt"
+2. Crear y activar un entorno virtual de Python.
+3. Usar el comando "pip install -r requirements.txt"
 
 
 
